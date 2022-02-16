@@ -12,10 +12,14 @@
             <h3 class="title-small">Main buttons</h3>
 
             <div class="box">
-              <AppButton text="primary" color="#FCFB3C" width="20rem" theme="but-secondary"/>
-              <AppButton text="primary" color="#cyan" width="20rem" theme="but-secondary"/>
-              <AppButton text="tertiary" color="cyan" width="20rem" theme="but-tertiary"/>
-              <AppButton text="disabled" color="cyan" width="20rem" theme="but-disabled"/>
+              <AppButton>Send</AppButton>
+              <AppButton disabled>Disabled</AppButton>
+            </div>
+
+            <div class="box">
+              <AppButton color="#ccc" background="#fff" radius="20px">Send</AppButton>
+              <AppButton color="#ccc" background="#fff" radius="20px" disabled>Disabled</AppButton>
+
             </div>
 
           </div>
@@ -26,21 +30,20 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import AppButton from '@/components/AppButton'
+  // import HelloWorld from './components/HelloWorld.vue'
+  import AppButton from '@/components/AppButton'
 
-export default {
-  data () {
-    return {
+  export default {
+    data () {
+      return {
+      }
+    },
+    components: {
+      AppButton
+    },
+    methods: {
     }
-  },
-  name: 'App',
-  components: {
-    AppButton
-  },
-  methods: {
   }
-}
 </script>
 
 <style>
