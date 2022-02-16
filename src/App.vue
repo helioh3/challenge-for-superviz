@@ -5,19 +5,6 @@
         <img alt="Vue logo" src="./assets/logo.png">
       </div>
     </header>
-      <div class="modal" v-show="open">
-        <section class="header-modal">
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-            to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-          </p>
-          <div class="box">
-            <button class="but but-primary" @click.prevent="closeModal">Ok</button>
-            <button class="but but-secondary" @click.prevent="closeModal">Cancel</button>
-          </div>
-        </section>
-      </div>
-
       <main>
         <div class="container">
           <div class="section">
@@ -25,21 +12,12 @@
             <h3 class="title-small">Main buttons</h3>
 
             <div class="box">
-              <button class="but but-primary"
-                @click.prevent="showModal"
-              >
-                primary
-              </button>
-
-              <button class="but but-secondary" @click.prevent="showModal">secondary</button>
-              <button class="but but-tertiary but-disabled">Disabled</button>
+              <AppButton text="save" color="yellow" width="20rem" theme="but-primary"/>
+              <AppButton text="primary" color="blue" width="20rem" theme="but-primary"/>
+              <AppButton text="tertiary" color="cyan" width="20rem" theme="but-tertiary"/>
+              <AppButton text="disabled" color="cyan" width="20rem" theme="but-disabled"/>
             </div>
 
-            <div class="box">
-              <button class="but but-primary">primary</button>
-              <button class="but but-secondary">secondary</button>
-              <button class="but but-tertiary but-disabled">Disabled</button>
-            </div>
           </div>
         </div>
       </main>
@@ -49,24 +27,18 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
+import AppButton from '@/components/AppButton'
 
 export default {
   data () {
     return {
-      open: false
     }
   },
   name: 'App',
   components: {
-    // HelloWorld
+    AppButton
   },
   methods: {
-    showModal () {
-      this.open = !this.open
-    },
-    closeModal () {
-      this.open = false
-    }
   }
 }
 </script>
@@ -136,47 +108,7 @@ export default {
   .box {
     margin-top: 2rem;
   }
-  .but {
-    font-size: 1.2rem;
-    border: none;
-    color: white;
-    padding: 12px 40px;
-    text-align: center;
-    transition-duration: 0.2s;
-    text-decoration: none;
-    margin: 4px 2px;
-    cursor: pointer;
-    display: inline-block;
-    text-transform: uppercase;
-    border-radius: 10px;
-    font-weight: bold;
-  }
-  .but-disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-    border: 1px solid #d4d4d4;
-    color: #868686;
-    z-index: -2;
-  }
 
-  .but-primary {
-    background-color: #F4CE00; /* Green */
-  }
-  .but-primary:hover {
-    background-color: #ffd400; /* Green */
-  }
-
-  .but-secondary {
-    background-color: #56525E; /* Green */
-  }
-
-  .but-tertiary {
-    background-color:#39363E; /* Green */
-  }
-
-  .but-secondary:hover {
-    background-color: #46434c; /* Green */
-  }
 
   .title {
     font-size: 2rem;
