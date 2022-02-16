@@ -135,20 +135,5 @@ export default {
     z-index: 1;
   }
 
-  .header-modal {
-    width: 70rem;
-    height: 20rem;
-    background-color: white;
-    border-radius: 1.5rem;
-    padding: 2rem;
-  }
-  .header-modal .box {
-    box-shadow: #26242A;
-  }
-  .header-modal p {
-    color: black;
-    font-size: 2rem;
-  }
-
 
 </style>

@@ -49,6 +49,9 @@ export default {
     border-radius: 10px;
     font-weight: bold;
   }
+  .but:hover {
+    background-color: blue;
+  }
   .but-disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -60,9 +63,6 @@ export default {
   .but-primary {
     background-color: #F4CE00; /* Green */
   }
-  .but-primary:hover {
-    background-color: #ffd400; /* Green */
-  }
 
   .but-secondary {
     background-color: #56525E; /* Green */
@@ -70,10 +70,6 @@ export default {
 
   .but-tertiary {
     background-color:#39363E; /* Green */
-  }
-
-  .but-secondary:hover {
-    background-color: #46434c; /* Green */
   }
 
   .but-small {
