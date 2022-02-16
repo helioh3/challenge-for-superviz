@@ -12,8 +12,8 @@
             <h3 class="title-small">Main buttons</h3>
 
             <div class="box">
-              <AppButton text="save" color="yellow" width="20rem" theme="but-primary"/>
-              <AppButton text="primary" color="blue" width="20rem" theme="but-primary"/>
+              <AppButton text="primary" color="yellow" text-color="black" width="20rem" theme="but-primary"/>
+              <AppButton text="primary" color="write" text-color="black" width="20rem" theme="but-secondary"/>
               <AppButton text="tertiary" color="cyan" width="20rem" theme="but-tertiary"/>
               <AppButton text="disabled" color="cyan" width="20rem" theme="but-disabled"/>
             </div>
@@ -123,17 +123,5 @@ export default {
     border-bottom: 1px solid #666666;
     padding: 2rem .5rem 1rem;
   }
-
-  .modal {
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .4);
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
-
 
 </style>
