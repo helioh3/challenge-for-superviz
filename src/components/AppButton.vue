@@ -19,6 +19,7 @@ export default {
 
     color: {
       type: String,
+      default: ''
     },
 
     width: {
@@ -50,9 +51,6 @@ export default {
     text-transform: uppercase;
     border-radius: 10px;
     font-weight: bold;
-  }
-  .but:hover {
-    background-color: rgba(255,255,255,0.3);
   }
   .but-disabled {
     opacity: 0.5;

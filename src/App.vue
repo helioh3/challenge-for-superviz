@@ -12,8 +12,8 @@
             <h3 class="title-small">Main buttons</h3>
 
             <div class="box">
-              <AppButton text="primary" color="yellow" text-color="black" width="20rem" theme="but-primary"/>
-              <AppButton text="primary" color="write" text-color="black" width="20rem" theme="but-secondary"/>
+              <AppButton text="primary" color="#FCFB3C" width="20rem" theme="but-secondary"/>
+              <AppButton text="primary" color="#cyan" width="20rem" theme="but-secondary"/>
               <AppButton text="tertiary" color="cyan" width="20rem" theme="but-tertiary"/>
               <AppButton text="disabled" color="cyan" width="20rem" theme="but-disabled"/>
             </div>
